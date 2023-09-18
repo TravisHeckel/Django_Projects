@@ -54,6 +54,6 @@ def createRecord(request):
         print(form.errors)
         form = ProfileForm()
     context = {
-        'form':form,
+        {'form': form},
     }
     return render(request,  'create_record.html', context)

@@ -9,3 +9,4 @@ class ProductForm(ModelForm):
 
     def delete(self):
         pass
+

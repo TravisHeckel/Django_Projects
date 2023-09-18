@@ -43,6 +43,7 @@ def confirmed(request):
     else:
         return redirect('admin_console')
 
+
 def createRecord(request):
     form = ProductForm(request.POST or None)
     if form.is_valid():
@@ -51,7 +52,5 @@ def createRecord(request):
     else:
         print(form.errors)
         form = ProductForm()
-    context = {
-        'form':form,
-    }
+    context = {'form':form}
     return render(request,  'createRecord.html', context)

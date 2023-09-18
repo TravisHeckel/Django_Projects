@@ -6,7 +6,6 @@ TYPE_CHOICES = {
     ('entrees', 'entrees'),
     ('treats', 'treats'),
     ('drinks', 'drinks'),
-
 }
 
 
